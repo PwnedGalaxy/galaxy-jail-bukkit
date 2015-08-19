@@ -1,0 +1,17 @@
+## YAML Template.
+---
+name: GalaxyJail
+main: net.gamingg.galaxyjail.GalaxyJail
+version: 0.1
+
+commands:
+  freeze:
+    description: Simple freeze command.
+  jail:
+    description: Simple jail command.
+  unfreeze:
+    description: Simple unfreeze command.
+  unjail:
+    description: Simple unjail command.
+  jailcheck:
+    description: Check jailed players.
