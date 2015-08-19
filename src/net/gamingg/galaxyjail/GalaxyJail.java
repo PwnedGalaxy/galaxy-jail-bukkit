@@ -15,7 +15,7 @@ import org.bukkit.event.player.PlayerMoveEvent;
 
 /**
  *
- * @author Tenki
+ * @author Tenkitsune, GamingG
  */
 public class GalaxyJail extends JavaPlugin implements Listener
 {
