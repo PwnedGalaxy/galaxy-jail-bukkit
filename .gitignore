@@ -7,5 +7,4 @@ nbactions.xml
 nb-configuration.xml
 .nb-gradle/
 *.class
-*.jar
 hs_err_pid*
