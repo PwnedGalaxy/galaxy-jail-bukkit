@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.Command;
@@ -26,7 +25,7 @@ public class GalaxyJail extends JavaPlugin implements Listener
     {
         getLogger().info("Plugin Enabled!");
         
-        frozenPlayers = new ArrayList<UUID>();
+        frozenPlayers = new ArrayList<>();
         
         getServer().getPluginManager().registerEvents(this, this);
     }
