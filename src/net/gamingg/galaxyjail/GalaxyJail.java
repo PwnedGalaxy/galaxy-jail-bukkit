@@ -171,6 +171,7 @@ public class GalaxyJail extends JavaPlugin implements Listener
         if(playerIsFrozen(event.getPlayer()))
         {
             event.setCancelled(true);
+            event.getPlayer().sendMessage("You are jailed, do not move!");
         }
     }
 
