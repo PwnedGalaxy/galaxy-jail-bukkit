@@ -34,46 +34,6 @@ public class GalaxyJail extends JavaPlugin implements Listener
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
     {
-
-        if(cmd.getName().equalsIgnoreCase("hello"))
-        {
-            if(sender instanceof Player)
-            {
-                sender.sendMessage(ChatColor.GREEN + "world!");
-            }
-            else
-            {
-                sender.sendMessage(ChatColor.GREEN + "otherworld");
-                Bukkit.getServer().broadcastMessage("maggots");
-            }
-
-        }
-
-        if(cmd.getName().equalsIgnoreCase("ophello"))
-        {
-            Player player = (Player) sender;
-
-            if(args.length > 0)
-            {
-                if(player.isOp())
-                {
-                        if(args[0].equalsIgnoreCase("1")){
-                            Bukkit.broadcastMessage(ChatColor.RED + "[" + ChatColor.RED + "SERVER" + ChatColor.RED + "]" + ChatColor.GREEN + "Maggots.");
-                        }
-
-                        else
-                        {
-                            Bukkit.broadcastMessage(ChatColor.RED + "[" + ChatColor.RED + "SERVER" + ChatColor.RED + "]" + ChatColor.GREEN + "You don't know the secret code.");
-                        }
-                }
-                else
-                {
-                        Bukkit.broadcastMessage(ChatColor.RED + "[" + ChatColor.RED + "SERVER" + ChatColor.RED + "]" + ChatColor.GREEN + "LITTLE BITCHES YOU DON'T GET SHIT.");
-                }
-            }
-
-        }
-
         if(cmd.getName().equalsIgnoreCase("freeze") || cmd.getName().equalsIgnoreCase("jail"))
         {
             return onFreezeCommand(sender, cmd, label, args);
